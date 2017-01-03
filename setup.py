@@ -5,7 +5,8 @@ setup(
 	packages = find_packages(exclude=['test']),
 	entry_points={
 	 'console_scripts':
-	 ['fix = FixBraces.cli:fixing ']
+	 ['fix = FixBraces.cli:fixing ',
+	 'tree = FixBraces.cli:tree']
 
 	},
 	install_requires=(['click','pytest']),
