@@ -7,7 +7,7 @@ from FixBraces import Tree
 @click.option('-i',default=None, help='input query')
 def fixing(i):
 	f = FB(str(i))
-	f.fixing()
+	print f.fixing()
 
 
 @click.command()

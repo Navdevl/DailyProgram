@@ -1,11 +1,8 @@
 class Tree:
 	def __init__(self, data):
-		#raise "OnlyInteger" if not isinstance(data, int)
-
 		self.data = data
 		self.left = None
 		self.right = None
-		self.fileObject = open(file_Name,'wb') 
 
 	# Recursion Inserting
 	def insert(self, data):
@@ -22,19 +19,26 @@ class Tree:
 
 	# Printing using recursion
 	def printme(self, tree):
-		if tree == None:
-			print("Leaf")
-		else:
-			pickle.dump(tree.data)
-			tree.printme(tree.left)
-			tree.printme(tree.right)
+		if tree == None: return
+    		print tree.data,
+    		tree.printme(tree.left)
+    		tree.printme(tree.right)
+
+    # For CLI to get series of inputs. Stops till Negative.
+	def get_input(self):
+		print "Give Negative Value to Stop Reading Inputs"
+		data = 0
+		while data >= 0:
+			data = int(input())
+			self.insert(data)
+ 
 
 
-T = Tree(5)
-T.insert(4)
-T.insert(3)
-T.insert(8)
-T.insert(9)
-T.insert(10)
 
-T.printme(T)
+
+
+
+
+
+
+

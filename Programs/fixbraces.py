@@ -16,16 +16,8 @@ class FixBraces:
 					remove.append(index.pop())
 					stack.pop()
 				else:
-					def find_open(stack):
-						if stack[len(stack)-1] is not '(':
-							stack.pop()
-							index.pop()
-							find_open(stack)
-						else:
-							stack.pop()
-							index.pop()
-
-					find_open(stack)
+					
+					self.find_open(stack)
 					# rev = stack[::-1]
 					# pos = len(stack) - 1 - rev.index('(') if '(' in stack else -1
 					# if pos is not -1:
@@ -40,6 +32,16 @@ class FixBraces:
 
 		result = ''.join(result)
 		return result
+
+	def find_open(self,stack):
+						if stack[len(stack)-1] is not '(':
+							stack.pop()
+							index.pop()
+							find_open(stack)
+						else:
+							stack.pop()
+							index.pop()
+
 
 f = FixBraces('ab()')
 print f.fixing()

@@ -11,5 +11,4 @@ setup(
 	},
 	install_requires=(['click','pytest']),
 	author = 'Naveen'
-
 	)

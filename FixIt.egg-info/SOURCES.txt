@@ -1,0 +1,11 @@
+setup.py
+FixIt.egg-info/PKG-INFO
+FixIt.egg-info/SOURCES.txt
+FixIt.egg-info/dependency_links.txt
+FixIt.egg-info/entry_points.txt
+FixIt.egg-info/requires.txt
+FixIt.egg-info/top_level.txt
+Programs/__init__.py
+Programs/fixbraces.py
+Programs/tree.py
+Programs/cli/__init__.py

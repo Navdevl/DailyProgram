@@ -1,4 +1,5 @@
 import click 
+import pickle
 
 from FixBraces import FixBraces as FB
 from FixBraces import Tree

@@ -1,0 +1,4 @@
+[console_scripts]
+fix = FixBraces.cli:fixing
+tree = FixBraces.cli:tree
+
